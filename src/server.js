@@ -19,9 +19,7 @@ serve(req=>{
 function serveStatic(file, type){
     return async ()=>{
         new Response(await Deno.readTextFile(file),{
-            headers:{
-                'Content-Type':''
-            }
+            headers: { "content-type": type },
         })
     }
 }
