@@ -8,3 +8,10 @@
 npx degit hyper63/sweet-stack myproject
 npx degit sveltejs/template app
 ```
+
+### Running client server
+- install foreman
+- define procfile
+```bash
+nf start
+```
