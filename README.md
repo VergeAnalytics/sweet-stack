@@ -15,3 +15,10 @@ npx degit sveltejs/template app
 ```bash
 nf start
 ```
+
+### Production Procfile
+```bash 
+Procfile
+server: make
+app: cd app && yarn && yarn dev
+```
