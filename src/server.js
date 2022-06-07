@@ -1,5 +1,5 @@
 import { serve } from 'std/http/server.ts';
-import { graphql, org } from './api.js';
+import { graphql } from './api.js';
 
 /**
  * @param {Request} reg
@@ -21,6 +21,13 @@ serve((req) => {
 	return routes[pathname] ? routes[pathname](req) : routes['/'](req);
 });
 
+
+/**
+ * 
+ * @param {string} file 
+ * @param {string} type 
+ * @returns {Response}
+ */
 function serveStatic(file, type) {
 	return async () => {
 		new Response(await Deno.readTextFile(file), {
