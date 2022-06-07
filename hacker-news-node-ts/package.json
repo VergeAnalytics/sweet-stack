@@ -2,9 +2,8 @@
   "name": "hacker-news-node-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev":"ts-node-dev --exit-child src/index.ts",
+    "dev": "ts-node-dev --exit-child src/index.ts",
     "start": "ts-node src/index.ts"
   },
   "keywords": [],
