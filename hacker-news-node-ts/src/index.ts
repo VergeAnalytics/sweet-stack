@@ -1,1 +1,1 @@
-console.log("hello World!")
+import "graphql-import-node"
