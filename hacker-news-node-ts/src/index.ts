@@ -3,7 +3,7 @@ import {execute, parse} from "graphql"
 import {schema} from "./schema"
 
 async function main(){
-    const myQuery = parse(`query {info}`);
+    const myQuery = parse(`query { info }`);
     const result = await execute({
         schema, 
         document: myQuery,
